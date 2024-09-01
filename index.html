@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="font-mono dark:bg-slate-950 antialiased scroll-smooth bg-[url('/src/dots.png')]">
+    <div id="main" class="h-screen overflow-x-hidden overflow-y-auto scroll-smooth  transition-all">
+        <button id="goToTop" class="fixed bottom-0 right-0 p-2 me-10 mb-5 bg-green-500 text-white rounded-full z-10 drop-shadow-lg hover:opacity-25 transition-all"> 
+            <svg class="size-[1rem] !fill-white" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path fill="white"
+                    d="M572.235 205.282v600.365a30.118 30.118 0 1 1-60.235 0V205.282L292.382 438.633a28.913 28.913 0 0 1-42.646 0 33.43 33.43 0 0 1 0-45.236l271.058-288.045a28.913 28.913 0 0 1 42.647 0L834.5 393.397a33.43 33.43 0 0 1 0 45.176 28.913 28.913 0 0 1-42.647 0l-219.618-233.23z">
+                </path>
+            </g>
+        </svg>  </button>
+        <header class="w-full bg-transparent flex items-center text-white ">
+            <!-- <h1 class="me-auto ms-10 p-2">Roxy</h1> -->
+            <div class="bg-white w-1/2 transition-all p-5 rounded-lg drop-shadow-xl" popover id="contactsPop">
+              
+                    <h2 class="text-lg font-semibold mb-5">Message me on:</h2>
+                    <div
+                        class="grid grid-flow-col p-5 space-x-10 place-items-start bg-slate-200 dark:bg-white rounded-lg *:size-[2rem] *:drop-shadow-lg ">
+                        <a href=""><img src="./src/facebook.png" alt="" class="hover:opacity-45 transition-all"></a>
+                        <a href=""><img src="./src/github.png" alt="" class="hover:opacity-45 transition-all"></a>
+                        <a href=""><img src="./src/new.png" alt="" class="hover:opacity-45 transition-all"></a>
+                        <a href=""><img src="./src/insta.svg" alt="" class="hover:opacity-45 transition-all"></a>
+                        <a href=""><img src="./src/linked.svg" alt="" class="hover:opacity-45 transition-all"></a>
+                    </div>
+               
+            </div>
+            <nav class="ms-auto me-10 p-2">
+                <ul class="flex gap-[3rem] *:text-lg">
+                    <li class="hover:opacity-50 transition-all hover:text-green-500"><a href="#intro">Intro</a></li>
+                    <li class="hover:opacity-50  transition-all hover:text-green-500"><a href="#aboutMe">About me</a></li>
+                    <li class="hover:opacity-50  transition-all hover:text-green-500"><a href="#projects">Projects</a></li>
+                    <li class="hover:opacity-50  transition-all hover:text-green-500"><button popovertarget="contactsPop">Contacts</button></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <!-- intro sec -->
+        <section id="intro" class="w-full h-screen grid grid-cols-1 place-items-center snap-start">
+            <div class="flex w-1/2 h-[80%] justify-center items-center space-y-10">
+                <div class="space-y-5">
+                    <h1 class="text-5xl font-semibold mb-5 dark:text-slate-300">Fullstack Web Developer</h1>
+                    <p class="text-lg font-extralight text-slate-700 dark:text-slate-400">Hello! <span class="font-bold text-xl">I’m Roxy</span>, a Full Stack Web Developer. I have a passion for building robust and user-friendly web
+                    applications, utilizing both front-end and back-end technologies to create seamless digital experiences.</p>
+
+                    <div class="flex justify-start items-center space-x-3">
+                        <h3 class="text-md font-semibold dark:text-slate-300">Stacks:</h3>
+                        <div class="grid grid-flow-col *:size-[1.5rem] *:drop-shadow-lg gap-5">
+                            <img src="./src/html-5.png" alt="">
+                            <img src="./src/css-3.png" alt="">
+                            <img src="./src/js.png" alt="">
+                            <img src="./src/document.png" alt="">
+                            <img src="./src/laravel.png" alt="">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <title>file_type_firebase</title>
+                                    <path d="M5.8,24.6l.17-.237L13.99,9.149l.017-.161L10.472,2.348a.656.656,0,0,0-1.227.207Z" style="fill:#ffc24a">
+                                    </path>
+                                    <path d="M5.9,24.42l.128-.25L13.965,9.114,10.439,2.448a.6.6,0,0,0-1.133.206Z" style="fill:#ffa712"></path>
+                                    <path d="M16.584,14.01l2.632-2.7L16.583,6.289a.678.678,0,0,0-1.195,0L13.981,8.971V9.2Z" style="fill:#f4bd62">
+                                    </path>
+                                    <path d="M16.537,13.9l2.559-2.62L16.537,6.4a.589.589,0,0,0-1.074-.047L14.049,9.082l-.042.139Z"
+                                        style="fill:#ffa50e"></path>
+                                    <polygon points="5.802 24.601 5.879 24.523 6.158 24.41 16.418 14.188 16.548 13.834 13.989 8.956 5.802 24.601"
+                                        style="fill:#f6820c"></polygon>
+                                    <path
+                                        d="M16.912,29.756,26.2,24.577,23.546,8.246A.635.635,0,0,0,22.471,7.9L5.8,24.6l9.233,5.155a1.927,1.927,0,0,0,1.878,0"
+                                        style="fill:#fde068"></path>
+                                    <path d="M26.115,24.534,23.483,8.326a.557.557,0,0,0-.967-.353L5.9,24.569l9.131,5.1a1.912,1.912,0,0,0,1.863,0Z"
+                                        style="fill:#fcca3f"></path>
+                                    <path
+                                        d="M16.912,29.6a1.927,1.927,0,0,1-1.878,0L5.876,24.522,5.8,24.6l9.233,5.155a1.927,1.927,0,0,0,1.878,0L26.2,24.577l-.023-.14Z"
+                                        style="fill:#eeab37"></path>
+                                </g>
+                            </svg>
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <title>file_type_tailwind</title>
+                                    <path
+                                        d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"
+                                        style="fill:#44a8b3"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-start items-start">
+                        <h3 class="text-2xl p-1 font-semibold dark:text-slate-300">Get in Touch</h3>
+                        <div
+                            class="grid grid-flow-col p-5 space-x-10 place-items-start bg-slate-200 dark:bg-white rounded-lg *:size-[2rem] *:drop-shadow-lg outline outline-2 outline-black dark:outline-slate-500">
+                            <a href=""><img src="./src/facebook.png" alt="" class="hover:opacity-45 transition-all"></a>
+                            <a href=""><img src="./src/github.png" alt="" class="hover:opacity-45 transition-all"></a>
+                            <a href=""><img src="./src/new.png" alt="" class="hover:opacity-45 transition-all"></a>
+                            <a href=""><img src="./src/insta.svg" alt="" class="hover:opacity-45 transition-all"></a>
+                            <a href=""><img src="./src/linked.svg" alt="" class="hover:opacity-45 transition-all"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <button
+                            class="p-4 rounded-lg hover:outline outline-white outline-offset-1 bg-green-500 text-slate-800 dark:text-slate-300 font-semibold hover:opacity-40 drop-shadow-xl">Download
+                            CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about me -->
+        <section id="aboutMe" class="w-full grid grid-cols-1 place-items-center snap-start">
+            <div class="flex flex-col w-[70%] h-full justify-center items-center scorllFunc">
+                <h1 class="text-5xl font-semibold mb-5 dark:text-slate-300 self-start">About me</h1>
+                <div class="bg-[#1d1e22] w-full rounded-lg p-2">
+                    <div class="flex gap-4 p-2">
+                        <div class="size-[1rem] hover:opacity-25 bg-red-500 rounded-full"></div>
+                        <div class="size-[1rem] hover:opacity-25 bg-blue-500 rounded-full"></div>
+                        <div class="size-[1rem] hover:opacity-25 bg-green-500 rounded-full"></div>
+                    </div>
+                    <div class="w-full p-5 bg-slate-800 rounded-lg">
+                        <p class="font-Lato flex flex-col text-white">
+                            <code class="text-yellow-300">{</code>
+                                <br>
+                               <code  class="ms-5 text-[rgb(45_137_199)] ">"About_me":<span class="text-[rgb(148_68_12)]">{</span></code>
+                                <br>
+                                <code popovertarget="show" class="ms-10 cursor-pointer"><span class="text-[rgb(45_137_199)]">"imageUrl":</span> <a href="./src/js.png" class="text-[rgb(185_91_39)]">"merced.png"</a>,</code>
+                                <br>
+                                <code class="ms-10"><span class="text-[rgb(45_137_199)]">"name": </span><span class="text-[rgb(185_91_39)]">"Merced, Roxy v."</span> ,</code>
+                                <br>
+                                <code class="ms-10"><span class="text-[rgb(45_137_199)]">"age": </span><span class="text-[rgb(185_91_39)]">"22"</span> ,</code>
+                                <br>
+                                <code class="ms-10"><span class="text-[rgb(45_137_199)]">"sex":</span><span class="text-[rgb(185_91_39)]">"male"</span>,</code>
+                                <br>
+                                <code class="ms-10"><span class="text-[rgb(45_137_199)]">"address":</span><span class="text-[rgb(185_91_39)]">"Trece Martires City, Cavite"</span>,</code>
+                                <br>
+                                <code class="ms-10"><span class="text-[rgb(45_137_199)]">"work_experience":</span><span class="text-[rgb(185_91_39)]">" "</span>,</code>
+                                <br>
+                                <code class="ms-10"><span class="text-[rgb(45_137_199)]">"educational_attainment": </span><span class="text-[rgb(185_91_39)]">["bachelor of science in information technology - graduating"]</span>,</code>
+                                <br>
+                                <code class="ms-10"><span class="text-[rgb(45_137_199)]">"skills": </span><span class="text-[rgb(185_91_39)]">["html/css/js", "laravel", "vueJs", "tailwind css", "firebase"]</span>,</code>
+                                <br>
+                                <code class="ms-10 break-all"><span class="text-[rgb(45_137_199)]">"objectives": </span><span class="text-[rgb(185_91_39)]">"Aspiring IT professional with a BS in Information Technology, passionate about web design and full-stack development.
+                                Junior-level proficiency in Vue.js and Laravel."</span>,</code>
+                                <br>
+                                <code class="ms-5 text-[rgb(148_68_12)]">}<span class="text-white">,</span></code>
+                                <br>
+                            <code class="text-yellow-300">}</code>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects -->
+        <section id="projects" class="w-full grid grid-cols-1 place-items-center snap-start mt-10 scorllFunc3 my-10">
+            <h1 class="text-5xl font-semibold mt-10 dark:text-slate-300 place-self-start ms-10">Projects</h1>
+            <div class="p-5 sm:p-8">
+                <div class="columns-1 gap-5 sm:columns-2 sm:gap-4 md:columns-3 lg:columns-4 [&>div:not(:first-child)]:mt-8">
+                    <div class="relative *:rounded-lg drop-shadow-xl group scorllFunc4 ">
+                        <img
+                            src="./src/AMT.png" class="group-hover:blur-sm object-cover size-[100%]" />
+
+                            <div class="absolute bottom-0 group-hover:h-full transition-all h-0 w-full overflow-hidden bg-slate-800 text-slate-300 overflow-y-auto">
+                                <div class="p-4 space-y-2 ">
+                                    <h1 class="text-md text-white">Attendace monitoring for Deped Cavite</h1>
+                                    <p class="text-sm break-all">An attendance monitoring system was built to assist HR personnel in recording the employees daily time records.</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="relative *:rounded-lg drop-shadow-xl group scorllFunc4">
+                        <img
+                            src="./src/Blog.png" class="group-hover:blur-sm object-cover size-[100%]" />
+
+                            <div class="absolute bottom-0 group-hover:h-full transition-all h-0 w-full overflow-hidden bg-slate-800 text-slate-300">
+                                <div class="p-4">
+                                    <h1 class="text-md text-white">Bulagblog</h1>
+                                    <p class="text-sm break-all">The bulagBlog app is a personal project of mine.</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="relative *:rounded-lg drop-shadow-xl group scorllFunc4">
+                        <img src="./src/ChatApp.png" class="group-hover:blur-sm object-cover size-[100%]" />
+                    
+                        <div
+                            class="absolute bottom-0 group-hover:h-full transition-all h-0 w-full overflow-hidden bg-slate-800 text-slate-300">
+                            <div class="p-4">
+                                <h1 class="text-md text-white">Chatite</h1>
+                                <p class="text-sm break-all">Chatite is a personal project of mine.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative *:rounded-lg drop-shadow-xl group scorllFunc4">
+                        <img src="./src/mayor-coll.png" class="group-hover:blur-sm object-cover size-[100%]" />
+                    
+                        <div
+                            class="absolute bottom-0 group-hover:h-full transition-all h-0 w-full overflow-hidden bg-slate-800 text-slate-300">
+                            <div class="p-4">
+                                <h1 class="text-md text-white">Montemayor College</h1>
+                                <p class="text-sm break-all">Montemayor College is an enrollment system. This system serves as our final exam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative *:rounded-lg drop-shadow-xl group scorllFunc4">
+                        <img src="./src/Todo app.png" class="group-hover:blur-sm object-cover size-[100%]" />
+                    
+                        <div
+                            class="absolute bottom-0 group-hover:h-full transition-all h-0 w-full overflow-hidden bg-slate-800 text-slate-300">
+                            <div class="p-4">
+                                <h1 class="text-md text-white">Todo list App</h1>
+                                <p class="text-sm break-all">This system is my personal project.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative *:rounded-lg drop-shadow-xl group scorllFunc4">
+                        <img src="./src/Ofliine.png" class="group-hover:blur-sm object-cover size-[100%]" />
+                    
+                        <div
+                            class="absolute bottom-0 group-hover:h-full transition-all h-0 w-full overflow-hidden bg-slate-800 text-slate-300">
+                            <div class="p-4">
+                                <h1 class="text-md text-white">Appointment data entry</h1>
+                                <p class="text-sm break-all">The Appoinment data entry is a system built for DePed personnel to help them encode and generate needed documents.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative *:rounded-lg drop-shadow-xl group scorllFunc4">
+                        <img src="./src/trescrusbmis.png" class="group-hover:blur-sm object-cover size-[100%]" />
+                    
+                        <div
+                            class="absolute bottom-0 group-hover:h-full transition-all h-0 w-full overflow-hidden bg-slate-800 text-slate-300">
+                            <div class="p-4">
+                                <h1 class="text-md text-white">Information System</h1>
+                                <p class="text-sm break-all">This system is a capstone project. The main purpose is to help them utilize paperless transactions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative *:rounded-lg drop-shadow-xl group scorllFunc4">
+                        <img src="./src/research.png" class="group-hover:blur-sm object-cover size-[100%]" />                  
+                        <div
+                            class="absolute bottom-0 group-hover:h-full transition-all h-0 w-full overflow-hidden bg-slate-800 text-slate-300">
+                            <div class="p-4">
+                                <h1 class="text-md text-white">Research information System</h1>
+                                <p class="text-sm break-all">This system is a capstone project mainly for research purposes such as checking and submitting research papers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                        
+                
+                </div>
+            </div>
+            <div class="place-self-end me-10">
+                <button
+                    class="p-4 rounded-lg hover:outline outline-white outline-offset-1 bg-green-500 text-slate-800 dark:text-slate-300 font-semibold hover:opacity-40 drop-shadow-xl">Visit repository
+                    </button>
+            </div>
+        </section>
+        <!--credit by Surjith S M for masonry template. I added more feature like hover-->
+        
+        
+
+        
+        <footer class="w-full  bg-white dark:bg-slate-800 dark:text-slate-200  p-4 text-center ">
+          <h2>© Copyright 2024 − Merced Roxy</h2>
+        </footer>
+    </div>
+   
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .scorllFunc{
+        animation-timeline: view();
+        animation-duration: 1ms;
+        animation-name: scrollAnim;
+        animation-range: entry 0% cover 40%;
+        transition: all;
+    }
+         @keyframes scrollAnim {
+             from {
+                 transform: scale(.1);
+                 filter: blur(10px);
+    
+             }
+    
+             to {
+                 transform: scale(1);
+    
+             }
+         }
+    .scorllFunc2{
+        animation-timeline: view();
+        animation-duration: 1ms;
+        animation-name: scrollAnim2;
+        animation-range: entry 0% cover 40%;
+        transition: all;
+    }
+         @keyframes scrollAnim2 {
+            from {
+                    transform: translateX(-100%) ;
+            
+                }
+            
+                to {
+                    transform: translateX(0%);
+            
+                }
+         }
+    .scorllFunc3{
+        animation-timeline: view();
+        animation-duration: 1ms;
+        animation-name: scrollAnim2;
+        animation-range: entry 0% cover 40%;
+        transition: all;
+    }
+         @keyframes scrollAnim2 {
+            from {
+                    transform: translateX(-10%) scale(.9);
+            
+                }
+            
+                to {
+                    transform: translateX(0%) scale(1);
+            
+                }
+         }
+    .scorllFunc4{
+        animation-timeline: view();
+        animation-duration: 1ms;
+        animation-name: scrollAnim4;
+        animation-range: entry 0% cover 40%;
+        transition: all;
+    }
+         @keyframes scrollAnim4 {
+            from {
+                    opacity: 0;;
+                    clip-path: inset(100% 100% 0 0);
+                }
+            
+                to {
+                    opacity: 1;
+                    clip-path: inset(0 0 0 0);
+            
+                }
+         }
+   
+}
