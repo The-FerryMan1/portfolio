@@ -856,6 +856,10 @@ video {
   background-image: url('/src/dots.png');
 }
 
+.bg-\[url\(\'\.\/src\/dots\.png\'\)\]{
+  background-image: url('./src/dots.png');
+}
+
 .\!fill-white{
   fill: #fff !important;
 }
