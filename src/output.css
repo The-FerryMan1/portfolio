@@ -860,6 +860,26 @@ video {
   background-image: url('./src/dots.png');
 }
 
+.bg-\[url\(\'dots\.png\'\)\]{
+  background-image: url('dots.png');
+}
+
+.bg-\[url\(\'\/dots\.png\'\)\]{
+  background-image: url('/dots.png');
+}
+
+.bg-\[url\(\'porfolio\/src\/dots\.png\'\)\]{
+  background-image: url('porfolio/src/dots.png');
+}
+
+.bg-\[url\(\'\/porfolio\/src\/dots\.png\'\)\]{
+  background-image: url('/porfolio/src/dots.png');
+}
+
+.bg-\[url\(\'src\/dots\.png\'\)\]{
+  background-image: url('src/dots.png');
+}
+
 .\!fill-white{
   fill: #fff !important;
 }
