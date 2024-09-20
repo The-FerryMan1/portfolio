@@ -10,7 +10,7 @@
 </head>
 <body class="font-mono dark:bg-slate-950 antialiased scroll-smooth" style="background-image: url('src/dots.png');"> 
     <div id="main" class="h-screen overflow-x-hidden overflow-y-auto scroll-smooth  transition-all">
-        <button id="goToTop" class="fixed bottom-0 right-0 p-2 me-10 mb-5 bg-green-500 text-white rounded-full z-10 drop-shadow-lg hover:opacity-25 transition-all"> 
+        <button id="goToTop" class="fixed bottom-0 translate-x-7 translate-y-3 sm:translate-x-0 sm:translate-y-0 right-0 p-2 me-10 mb-5 bg-green-500 text-white rounded-full z-10 drop-shadow-lg hover:opacity-25 transition-all"> 
             <svg class="size-[1rem] !fill-white" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -35,8 +35,9 @@
                     </div>
                
             </div>
-            <nav class="ms-auto me-10 p-2">
-                <ul class="flex gap-[3rem] sm:*:text-lg text-md">
+            <nav class="ms-auto me-10 p-2 sm:flex hidden" >
+                
+                <ul class=" flex gap-[3rem] sm:*:text-lg text-md ">
                     <li class="hover:opacity-50 transition-all hover:text-green-500"><a href="#intro">Intro</a></li>
                     <li class="hover:opacity-50  transition-all hover:text-green-500 text-nowrap"><a href="#aboutMe">About me</a></li>
                     <li class="hover:opacity-50  transition-all hover:text-green-500"><a href="#projects">Projects</a></li>
@@ -44,17 +45,35 @@
                     
                 </ul>
             </nav>
+            <nav class="ms-auto p-2 sm:hidden block w-full" >
+                <details class="relative left-[00%] w-full ">
+                    <summary class="list-none"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="size-7">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg></summary>
+                    <ul class="absolute left-5 rounded-lg flex flex-col gap-4 w-1/2 bg-slate-800 px-6 py-5" >
+                        <li class="hover:opacity-50 transition-all hover:text-green-500"><a href="#intro">Intro</a></li>
+                        <li class="hover:opacity-50  transition-all hover:text-green-500 text-nowrap"><a href="#aboutMe">About me</a></li>
+                        <li class="hover:opacity-50  transition-all hover:text-green-500"><a href="#projects">Projects</a></li>
+                        <li class="hover:opacity-50  transition-all hover:text-green-500"><button popovertarget="contactsPop">Contacts</button>
+                        </li>
+                    
+                    </ul>
+                </details>
+               
+            </nav>
+            
         </header>
         <!-- intro sec -->
         <section id="intro" class="w-full h-screen grid grid-cols-1 place-items-center snap-start">
-            <div class="flex w-1/2 h-[80%] justify-center items-center space-y-10">
-                <div class="space-y-5">
-                    <h1 class="text-5xl font-semibold mb-5 dark:text-slate-300">Fullstack Web Developer</h1>
-                    <p class="text-lg font-extralight text-slate-700 dark:text-slate-400">Hello! <span class="font-bold text-xl">I’m Roxy</span>, a Full Stack Web Developer. I have a passion for building robust and user-friendly web
+            <div class="flex sm:w-1/2 w-full h-[80%] justify-center items-center space-y-10">
+                <div class="space-y-5 w-full">
+                    <h1 class="sm:text-5xl sm:ms-0 p-2 text-2xl break-words font-semibold  dark:text-slate-300">Fullstack Web Developer</h1>
+                    <p class="sm:text-lg sm:ms-0 text-justify p-2 break-words text-sm font-extralight text-slate-700 dark:text-slate-400">Hello! I’m Roxy, a Full Stack Web Developer. I have a passion for building robust and user-friendly web
                     applications, utilizing both front-end and back-end technologies to create seamless digital experiences.</p>
 
-                    <div class="flex justify-start items-center space-x-3">
-                        <h3 class="text-md font-semibold dark:text-slate-300">Stacks:</h3>
+                    <div class="flex sm:flex-nowrap flex-wrap sm:justify-start justify-center items-center space-x-3">
+                        <h3 class="text-md  font-semibold dark:text-slate-300 sm:mb-0 mb-4">Stacks:</h3>
                         <div class="grid grid-flow-col *:size-[1.5rem] *:drop-shadow-lg gap-5">
                             <img src="./src/html-5.png" alt="">
                             <img src="./src/css-3.png" alt="">
@@ -97,10 +116,10 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="flex flex-col justify-start items-start">
-                        <h3 class="text-2xl p-1 font-semibold dark:text-slate-300">Get in Touch</h3>
+                    <div class="flex flex-col justify-start items-start sm:p-0 p-2">
+                        <h3 class="sm:text-2xl text-md p-1 font-semibold dark:text-slate-300">Get in Touch</h3>
                         <div
-                            class="grid grid-flow-col p-5 space-x-10 place-items-start bg-slate-200 dark:bg-white rounded-lg *:size-[2rem] *:drop-shadow-lg outline outline-2 outline-black dark:outline-slate-500">
+                            class="flex overflow-auto w-full sm:p-5 p-2 space-x-10  bg-slate-200 dark:bg-white rounded-lg sm:*:size-[2rem] *:size-[1.5rem] *:drop-shadow-lg outline outline-2 outline-black dark:outline-slate-500">
                             <a href=""><img src="./src/facebook.png" alt="" class="hover:opacity-45 transition-all"></a>
                             <a href=""><img src="./src/github.png" alt="" class="hover:opacity-45 transition-all"></a>
                             <a href=""><img src="./src/new.png" alt="" class="hover:opacity-45 transition-all"></a>
@@ -108,9 +127,9 @@
                             <a href=""><img src="./src/linked.svg" alt="" class="hover:opacity-45 transition-all"></a>
                         </div>
                     </div>
-                    <div>
+                    <div class="sm:ms-0 ms-2">
                         <a href="./src/CV-Merced.pdf" download="CV-Merced.pdf"
-                            class="p-4 rounded-lg hover:outline outline-white cursor-pointer outline-offset-1 bg-green-500 text-slate-800 dark:text-slate-300 font-semibold hover:opacity-40 drop-shadow-xl">Download
+                            class="sm:p-4 p-3 rounded-lg hover:outline outline-white cursor-pointer outline-offset-1 bg-green-500 text-slate-800 dark:text-slate-300 font-semibold hover:opacity-40 drop-shadow-xl">Download
                             CV</a>
                     </div>
                 </div>
@@ -119,10 +138,10 @@
         <!-- about me -->
         <section id="aboutMe" class="w-full grid grid-cols-1 place-items-center snap-start">
             <div class="flex flex-col sm:w-[70%] w-[95%] h-full justify-center items-center scorllFunc">
-                <h1 class="text-5xl font-semibold mb-5 dark:text-slate-300 self-start">About me</h1>
-                <div class="place-self-start my-5">
+                <h1 class="sm:text-5xl text-2xl font-semibold mb-5 dark:text-slate-300 self-start">About me</h1>
+                <div class="place-self-start my-5 ">
                     <a href="./src/CV-Merced.pdf" download="CV-Merced.pdf" 
-                        class="p-4 rounded-lg hover:outline outline-white outline-offset-1 cursor-pointer bg-green-500 text-slate-800 dark:text-slate-300 font-semibold hover:opacity-40 drop-shadow-xl">Download
+                        class="sm:p-4 p-3 rounded-lg hover:outline outline-white cursor-pointer outline-offset-1 bg-green-500 text-slate-800 dark:text-slate-300 font-semibold hover:opacity-40 drop-shadow-xl">Download
                         CV</a>
                 </div>
                 <div class="bg-[#1d1e22] w-full rounded-lg p-2">
@@ -132,7 +151,7 @@
                         <div class="size-[1rem] hover:opacity-25 bg-green-500 rounded-full"></div>
                     </div>
                     <div class="w-full p-5 bg-slate-800 rounded-lg">
-                        <p class="font-Lato flex flex-col text-white">
+                        <p class="font-Lato flex flex-col text-white sm:text-base text-[16px]">
                             <code class="text-yellow-300">{</code>
                                 <br>
                                <code  class="ms-5 text-[rgb(45_137_199)] ">"About_me":<span class="text-[rgb(148_68_12)]">{</span></code>
@@ -167,7 +186,7 @@
 
         <!-- projects -->
         <section id="projects" class="w-full grid grid-cols-1 place-items-center snap-start mt-10 scorllFunc3 my-10">
-            <h1 class="text-5xl font-semibold mt-10 dark:text-slate-300 place-self-start ms-10">Projects</h1>
+            <h1 class="sm:text-5xl text-2xl font-semibold mt-10 dark:text-slate-300 place-self-start ms-10">Projects</h1>
             <div class="p-5 sm:p-8">
                 <div class="columns-1 gap-5 sm:columns-2 sm:gap-4 md:columns-3 lg:columns-4 [&>div:not(:first-child)]:mt-8">
                     <div class="relative *:rounded-lg drop-shadow-xl group scorllFunc4 ">
